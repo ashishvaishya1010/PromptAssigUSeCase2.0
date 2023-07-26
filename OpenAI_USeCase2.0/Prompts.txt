@@ -1,0 +1,23 @@
+Prompt 1 - 
+
+Generate the attendance sheet for 3 employees for the June,2022 with exact dates and days (total 30 days mark weekend(Saturday Sunday) '0') in csv 
+format  with headers as Employee Name, Employee Id(EMP...),Date (DD-MM-YY), Day, Time In(range 9AM-10AM), Time Out(range 5PM-10PM), Hours Worked
+(Time In+Time Out)
+
+emp_att_june.csv
+
+Prompt 2 - 
+
+Give Employee-leaves for 3 employees for june,2022 with exact dates and days in csv format and headers are Employee name,Emplyee Id(EMP...),leave type(), leave Duration,
+leave Status(Approved,NotApproved) take at lease 1 Approved or NotApproved and convert the table in to csv format. and also  Generate the holiday calendar for a
+corporate employee(India) for year 2022 with exact dates and days contain the headers Date(dd/mm/yy),Holiday name,Type(public) and convert it in to csv format.
+
+emp_att_cal.csv
+
+Prompt 3 -
+
+Generate the Attendance -sheet for 3 employees for june, 2022 with exact dates and days take reference from above two prompts in to csv format which contain  headers, Employee Name,Employee 
+Id(EMP...),Total Working Day(Calculated),Total Working Hours(Calculated).excluding weekends, holidays, leaves and based on number of working days, each day 
+8 hours being working hours.
+
+emp_att_result_june.csv

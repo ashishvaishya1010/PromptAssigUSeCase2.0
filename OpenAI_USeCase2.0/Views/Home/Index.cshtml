@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Use Case 2";
+}
+
+<h1>UseCase_2.0</h1>
+
+@using (Html.BeginForm("Get", "Home", FormMethod.Post))
+{
+    <label>Case A:</label>
+    <input type="text" name="Case1" />
+    <br />
+
+    <label>Case B:</label>
+    <input type="text" name="Case2" />
+    <br />
+
+    <label>Case C:</label>
+    <input type="text" name="Case3" />
+    <br />
+
+    <input type="submit" value="Submit" />
+}
+
+@if (ViewBag.FileNames != null && ViewBag.FileNames.Count > 0)
+{
+    <h2>Generated Responses:</h2>
+    @for (int i = 0; i < ViewBag.FileNames.Count; i++)
+    {
+        string fileName = ViewBag.FileNames[i];
+        <p>
+            <a href="@Url.Action("Download", new { fileName = fileName })">@fileName</a>
+        </p>
+    }
+}
