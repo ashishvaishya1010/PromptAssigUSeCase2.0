@@ -39,7 +39,7 @@ namespace Use_Case_2.Controllers
             var options = new Dictionary<string, object>
             {
                 { "model", "gpt-3.5-turbo" },
-                { "max_tokens", 3500 },
+                { "max_tokens", 4000 },
                 { "temperature", 0.2 }
             };
 
