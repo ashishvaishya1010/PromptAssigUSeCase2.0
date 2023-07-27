@@ -29,9 +29,9 @@ namespace Use_Case_2.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Get(string prompt1, string prompt2, string prompt3, string filename1, string filename2, string filename3)
+        public async Task<IActionResult> Get(string caseA, string caseB, string caseC, string filename1, string filename2, string filename3)
         {
-            var prompts = new string[] { prompt1, prompt2, prompt3 };
+            var cases = new string[] { caseA , caseB , caseC  };
             var filenames = new string[] { filename1 , filename2 , filename3  };
             var resultFiles = new List<string>();
             var inputFiles = new List<string>();
@@ -47,9 +47,9 @@ namespace Use_Case_2.Controllers
 
             try
             {
-                for (int i = 0; i < prompts.Length; i++)
+                for (int i = 0; i < cases.Length; i++)
                 {
-                    string input = prompts[i];
+                    string input = cases[i];
 
                     if (!string.IsNullOrEmpty(input))
                     {
